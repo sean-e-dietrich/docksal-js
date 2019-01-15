@@ -23,6 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
+    "cli-table": "^0.3.1",
     "docker-compose": "^0.9.3",
     "docker-file-parser": "^1.0.4",
     "docker-machine": "^3.0.0",
@@ -52,6 +53,7 @@
     "shell-escape": "^0.2.0",
     "shell-quote": "^1.6.1",
     "shelljs": "^0.8.3",
+    "simple-dockerode": "^0.2.2",
     "ssh-keygen": "^0.4.2",
     "ssh2": "^0.7.0",
     "strip-ansi": "^5.0.0",

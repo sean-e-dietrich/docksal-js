@@ -1,0 +1,42 @@
+language: node_js
+matrix:
+  include:
+    - os: linux
+      env: DOCKSAL_PKG_TYPE=pacman
+      node_js: '10'
+    - os: linux
+      env: DOCKSAL_PKG_TYPE=rpm
+      node_js: '10'
+    - os: linux
+      env: DOCKSAL_PKG_TYPE=deb
+      node_js: '10'
+    - os: osx
+      env: DOCKSAL_PKG_TYPE=dmg
+      node_js: '10'
+services:
+  - docker
+sudo: required
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+
+before_install:
+  - echo ''
+
+before_script:
+  - echo ''
+
+script:
+  - echo ''
+
+notifications:
+  email:
+    recipients:
+      - sean@dockal.io
+    on_failure: always
+
+#deploy:
+
+after_success: yarn coverage
